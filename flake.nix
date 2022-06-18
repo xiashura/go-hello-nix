@@ -18,8 +18,8 @@
 							pname = "go-hello-nix";
 						  inherit version;
               src = ./.;
-							vendorSha256 = pkgs.lib.fakeSha256;
-							#vendorSha256 = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
+							#vendorSha256 = pkgs.lib.fakeSha256;
+							vendorSha256 = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
             	};
 						docker = let 
 							 web = self.packages.${system}.default;
